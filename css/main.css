@@ -17,3 +17,7 @@
 .leading{
     font-size:25px;
 }
+.nav_float{
+    position:absolute;
+    left:64%;
+}
