@@ -1,4 +1,19 @@
-﻿.Home {
-    margin-top: 3.5rem;
-    height:250px;
+﻿body {
+}
+.home {
+    margin-top:3.5rem ;
+    height:650px;
+    background-image:url(../images/home-shape.png);
+}
+#active {
+    color:rgb(0 123 255);
+    font-weight:bold;
+}
+.heading {
+    font-size: 57px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+.leading{
+    font-size:25px;
 }
