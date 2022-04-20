@@ -1,7 +1,7 @@
 ﻿body {
 }
 .home {
-    margin-top:3.5rem ;
+    margin-top:2.5rem ;
     height:650px;
     background-image:url(../images/home-shape.png);
 }
@@ -10,7 +10,7 @@
     font-weight:bold;
 }
 .heading {
-    font-size: 57px;
+    font-size: 45px;
     letter-spacing: -0.5px;
     line-height: 1.2;
 }
