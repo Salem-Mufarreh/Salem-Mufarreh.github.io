@@ -1,9 +1,12 @@
 ﻿body {
+    background-color: #f8f9fa !important;
+    padding-bottom:20px;
 }
 .home {
     margin-top:2.5rem ;
     height:650px;
     background-image:url(../images/home-shape.png);
+    border-radius:10px;
 }
 #active {
     color:rgb(0 123 255);
@@ -20,4 +23,23 @@
 .nav_float{
     position:absolute;
     left:64%;
+}
+.services {
+    text-align: center;
+    padding: 3rem;
+}
+.feature-widget {
+    padding: 40px 45px;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
+    box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
+}
+.rounded {
+    border-radius: 15px !important;
+}
+#services .row {
+    margin-right: -145px !important;
+    margin-left:-145px;
 }
