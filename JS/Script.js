@@ -1,4 +1,4 @@
-/*$('document').ready(function () {
+$('document').ready(function () {
     var typed = new Typed('#typed', {
         //stringsElement: '#typed-strings',
         backSpeed: 80,
@@ -7,7 +7,7 @@
         strings: ['Web Developer ', 'Full Stack Developer ', 'Software Developer'],
         loop: true
     });
-}); */
+}); 
 
 function download() {
     window.location.href = "./Files/Resume.pdf";
@@ -30,7 +30,7 @@ navtoggle.addEventListener("click", () => {
     }
 });
 
-/*const header = document.querySelector("header");
+const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home");
 
 const sectionOneOptions = {
@@ -43,10 +43,15 @@ const sectionOneObserver = new IntersectionObserver(function (
 ) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
+            document.querySelector(".primary-header").style.backgroundColor = "transparent";
+            
 
+        }
+        else {
+            document.querySelector(".primary-header").style.backgroundColor = "white";
         }
     });
 },
     sectionOneOptions);
 
-sectionOneObserver.observe(sectionOne); */
+sectionOneObserver.observe(sectionOne);
