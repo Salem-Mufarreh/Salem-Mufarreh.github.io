@@ -1,10 +1,11 @@
 ﻿body {
     background-color: #f8f9fa !important;
     padding-bottom:20px;
+    z-index:1;
+    overflow-x:hidden;
 }
 .home {
-    margin-top:2.5rem ;
-    height:650px;
+    height:750px;
     background-image:url(../images/home-shape.png);
     border-radius:10px;
 }
@@ -20,10 +21,7 @@
 .leading{
     font-size:25px;
 }
-.nav_float{
-    position:absolute;
-    left:64%;
-}
+
 .services {
     text-align: center;
     padding: 3rem;
@@ -42,4 +40,77 @@
 #services .row {
     margin-right: -145px !important;
     margin-left:-145px;
+}
+
+/* navigation */
+.flex{
+    display:flex;
+    gap: var(--gap,1rem);
+}
+.primary-header {
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,.2);
+    padding:2em;
+    background-color:transparent;
+}
+.primary_navigation{
+    margin:0;
+    padding:0;
+    list-style:none;
+
+
+}
+.mobile-toggle{
+    display:none;
+}
+.primary_navigation a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+
+}
+/*for mobile devices*/
+@media(max-width:50em){
+    .primary_navigation{
+        position:fixed;
+        inset:0 0 0 50%;
+        background:hsla(0 0% 0% /0.20);
+        backdrop-filter:blur(1rem);
+        flex-direction:column;
+        padding:min(30vh,10rem) 2em;
+        --gap:2em;
+        z-index:2;
+
+        transform:translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    .primary_navigation[data-visible="true"]{
+        transform:translateX(0%);
+        transition: transform 350ms ease-out;
+
+    }
+    .primary_navigation a{
+        color:black;
+    }
+    .mobile-toggle{
+        display:block;
+        position:absolute;
+        background:url('../images/list.svg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:2em;
+        border:0;
+        aspect-ratio:1;
+        top:2rem;
+        right:2rem;
+        z-index:3;
+    }
+    .mobile-toggle[aria-expanded ="true"] {
+        background: url('../images/x-lg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
