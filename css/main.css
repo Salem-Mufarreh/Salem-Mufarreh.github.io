@@ -24,7 +24,14 @@
 
 .services {
     text-align: center;
+    align-items:center;
     padding: 3rem;
+}
+.services-row{
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:12%;
 }
 .feature-widget {
     padding: 40px 45px;
