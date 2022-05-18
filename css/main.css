@@ -3,6 +3,7 @@
     padding-bottom:20px;
     z-index:1;
     overflow-x:hidden;
+    padding-bottom:0px;
 }
 .home {
     height:750px;
